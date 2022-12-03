@@ -40,11 +40,30 @@ int main () {
 	int num = 42;
 
 	ft_printf("Hello, %s\n", "World!");
-	ft_printf("Now you can go %s use %c bunch of %s\n", "wild", 'a', "format specifiers");
+	ft_printf("Now you can %s %c bunch of %s\n", "use", 'a', "format specifiers");
 	ft_printf("The address of num is %p\n", &num);
-	ft_printf("%-20s%-10d\n", "Left adjusted", num);
 	ft_printf( "%s%09d\n","Leading zeros: ", 42);
+	ft_printf("Precision 42: |%42s|\n", "Fortytwo");
+	ft_printf("Lowercase 42 hex: %x\n", 42);
+	ft_printf("Uppercase 42 hex: %X\n", 42);
+	ft_printf("Minimum length, left-justified: |%-10s|\n", "Hello");
+	ft_printf("A string with a minimum length: |%10s|\n", "Hello");
+	ft_printf("An asterisk to specify minimum length: |%*s|\n", 10, "Hello");
 
 	return (0);
 }
+```
+#### Output
+
+```
+Hello, World!
+Now you can use a bunch of format specifiers
+The address of num is 0x7ff7bd543588
+Leading zeros: 000000042
+Precision 42: |                                  Fortytwo|
+Lowercase 42 hex: 2a
+Uppercase 42 hex: 2A
+Minimum length, left-justified: |Hello     |
+A string with a minimum length: |     Hello|
+An asterisk to specify minimum length: |     Hello|
 ```
