@@ -14,7 +14,7 @@ __Skills__:
 - Rigor
 - Algorithms & AI
 
-[Read the full subject]().
+[Read the full subject](https://github.com/nvanwinden/ft_printf/blob/main/en.subject.pdf).
 
 ## Instructions :clipboard:
 
